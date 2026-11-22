@@ -1,0 +1,48 @@
+{
+  "schema_version": 1,
+  "profile": "portable-local-offline",
+  "status": "proposed_policy_only",
+  "network": {
+    "default": "disabled",
+    "telemetry_upload": false,
+    "external_model_provider": "disabled_by_default"
+  },
+  "input": {
+    "format": "jsonl",
+    "unknown_fields": "drop",
+    "secret_field_action": "reject_record_before_storage_or_model",
+    "secret_value_action": "reject_record_and_block_case_bundle",
+    "diagnostics_include_secret_value": false,
+    "raw_input_copy": false,
+    "raw_event_persistence": false
+  },
+  "identifiers": {
+    "user": "tenant_scoped_pseudonym_before_persistence_or_model",
+    "event_id": "opaque_reference_or_keyed_hash",
+    "session_id": "opaque_correlation_only",
+    "source_ip_and_full_user_agent": "memory_only_coarsen_before_model",
+    "device_id_and_mailbox_target": "hash_unless_explicitly_required_and_policy_allows"
+  },
+  "storage": {
+    "findings": "explicit_local_output_path_only",
+    "findings_retention": "until_explicit_deletion",
+    "audit_metadata_only": true,
+    "audit_retention_days": 30,
+    "prompt_bundle_retention": "none_after_invocation",
+    "file_permissions": "owner_only_or_fail_closed",
+    "hidden_cache": false,
+    "automatic_sync_or_upload": false
+  },
+  "agents": {
+    "tool_grants": [],
+    "filesystem_wide_access": false,
+    "shell_access": false,
+    "external_browsing": false,
+    "identity_provider_writes": false,
+    "mailbox_writes": false,
+    "external_contact": false,
+    "side_effect_actions": false
+  },
+  "review_required": ["DATA-06", "SEC-04", "AUD-16"],
+  "enforcement_status": "not_implemented"
+}

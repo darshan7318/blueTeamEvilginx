@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "policy_id": "blueteam-g0-gate-v1",
+  "current_stage": 0,
+  "current_gate": "G0",
+  "default_decision": "deny",
+  "automatic_transition": false,
+  "assignment_activation_requires_gate_pass": true,
+  "agent_tools_enabled_by_default": false,
+  "side_effect_actions_enabled_by_default": false,
+  "pass_requirements": {
+    "all_criteria_verified": true,
+    "independent_reviewer_role": "AUD-16",
+    "independent_review_attestation_required": true,
+    "attestation_must_reference_policy_id": "blueteam-g0-gate-v1"
+  },
+  "criteria": [
+    {
+      "id": "product_charter",
+      "status": "verified",
+      "owner": "PM-01",
+      "evidence": ["agents/g0/product-charter.md", "agents/g0/decisions.md"]
+    },
+    {
+      "id": "separated_role_prompts_and_logical_assignments",
+      "status": "verified",
+      "owner": "PO-02",
+      "evidence": ["agents/prompts/roles/", "agents/g0/assignment-registry.json", "agents/g0/prompt-manifest.json"]
+    },
+    {
+      "id": "portable_python_dev_and_synthetic_test_environments",
+      "status": "verified",
+      "owner": "SRE-10",
+      "evidence": [".python-version", "uv.lock", ".venv/", ".venv-test/"]
+    },
+    {
+      "id": "local_data_policy_review",
+      "status": "pending",
+      "owner": "DATA-06",
+      "collaborators": ["SEC-04"],
+      "evidence": ["agents/g0/data-handling-defaults.md", "agents/g0/data-handling-defaults.json"]
+    },
+    {
+      "id": "local_agent_runtime_and_assignment_enforcement",
+      "status": "pending",
+      "owner": "ARCH-03",
+      "collaborators": ["PO-02", "SRE-10"],
+      "evidence": ["agents/g0/prompt_preview.py"]
+    },
+    {
+      "id": "deterministic_stage_gate_enforcement",
+      "status": "pending",
+      "owner": "ARCH-03",
+      "collaborators": ["PO-02", "AUD-16"],
+      "evidence": ["agents/g0/gate-policy.json", "agents/g0/gate_report.py"]
+    },
+    {
+      "id": "source_control_and_signed_prompt_provenance",
+      "status": "pending",
+      "owner": "PO-02",
+      "collaborators": ["SRE-10"],
+      "evidence": ["agents/g0/prompt-manifest.json"]
+    },
+    {
+      "id": "independent_g0_assurance_attestation",
+      "status": "pending",
+      "owner": "AUD-16",
+      "collaborators": ["SEC-04"],
+      "evidence": []
+    }
+  ],
+  "downstream_gates": [
+    {
+      "stage": 5,
+      "id": "local_data_controls_implemented_and_validated",
+      "owner": "ENG-07",
+      "collaborators": ["QA-09", "DATA-06", "SEC-04"],
+      "evidence_required": ["synthetic rejection/redaction results", "storage and permission checks", "network-egress verification", "independent security review"]
+    },
+    {
+      "stage": 6,
+      "id": "portable_installer_and_os_matrix_validated",
+      "owner": "REL-17",
+      "collaborators": ["SRE-10", "QA-09", "AUD-16"],
+      "evidence_required": ["supported OS install results", "offline startup evidence", "upgrade/uninstall behavior", "signed artifact provenance"]
+    }
+  ],
+  "note": "This policy defines criteria only. gate_report.py reports state and cannot change criteria, authorize actions, or advance stages."
+}

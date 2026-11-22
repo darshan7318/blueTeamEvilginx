@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "initiative": "BlueTeamEvilginx",
+  "current_stage": 0,
+  "current_gate": "G0",
+  "gate_status": "blocked",
+  "next_stage": null,
+  "next_stage_enabled": false,
+  "assignment_activation_allowed": false,
+  "agent_tools_enabled": false,
+  "side_effect_actions_enabled": false,
+  "prompt_manifest": "prompt-manifest.json",
+  "blockers": [
+    "Only a dry-run prompt preview exists; local agent runtime and role assignment enforcement are not implemented.",
+    "Portable packaging and app-level health checks are not implemented.",
+    "Data-handling defaults await DATA-06/SEC-04 review; enforcement is a Stage 5 criterion.",
+    "Only a report-only gate policy/checker exists; assignment enforcement and independent AUD-16 gate review are unavailable.",
+    "Git source-control history is unavailable in this sandbox; only a verified hash snapshot exists."
+  ],
+  "last_reviewed": "2026-11-23",
+  "note": "This is a state record, not an enforcement service. Do not advance stages based on this file alone."
+}

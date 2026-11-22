@@ -1,0 +1,148 @@
+﻿{
+    "schema_version":  1,
+    "snapshot_id":  "g0-office-baseline-v10-2026-11-23",
+    "generated_at_utc":  "2026-11-22T19:49:39.2447116Z",
+    "purpose":  "Integrity snapshot for role prompts, skills, assignments, gate controls, and G0 policy artifacts; not a substitute for source-control history or signed release provenance.",
+    "artifacts":  [
+                      {
+                          "path":  "agents/prompts/common-contract.md",
+                          "sha256":  "7BF420830A6117ED0CDF9463C24B24987E26DBA1B18C6D70ED28708BB4764D4D"
+                      },
+                      {
+                          "path":  "agents/prompts/assignment-packet.md",
+                          "sha256":  "90A49A09FC86A9DEB68C3CE761CBB2FBD742978BA0A396E08F2DDCB6614EB95A"
+                      },
+                      {
+                          "path":  "agents/prompts/role-prompts.md",
+                          "sha256":  "292801EC4A31EB647B9BEC38605EFD94BC3E3C237739F68012CEB26534FB9BC1"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/ARCH-03.md",
+                          "sha256":  "F3756644B14ED5137D5CA11C6B8682B37035984615D1D7138A692F06B829014B"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/AUD-16.md",
+                          "sha256":  "93850BAC8FFCEB5E9CC3B87EFADF6A921366CD3F91E0578919B9C95D6B416E2C"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/AUT-18.md",
+                          "sha256":  "09B7E7CE7876C2EABBC66A105E02E63823CE6DC7775363090B58676511433FF3"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/DATA-06.md",
+                          "sha256":  "DA9360CEF0A235A70D086BF9CAA21B4A9D4698FC24E6B659D48635BF47639502"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/DET-08.md",
+                          "sha256":  "3200D4632B7496DB3622664469DA99796A003209A8BA86332FD977BBE7957D9A"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/ENG-07.md",
+                          "sha256":  "D3B9DAC801D4EF430E1A10FD27902A081CF4EF31503B2AFB06DE25751A3277E3"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/EXEC-15.md",
+                          "sha256":  "727420E294A9225812A68C669C8BB186C172D9BDEB64B251305D3E3521D50CA7"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/PM-01.md",
+                          "sha256":  "095079FF70922DB2BE8A15606A4D2E1AE96D8E0E64C26497366EEF39F6B96346"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/PO-02.md",
+                          "sha256":  "701BE3B9DB628086C8C9457A01FEBDD864920BCE8963D55D812109C9A951BB78"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/QA-09.md",
+                          "sha256":  "469028D788E8A4415C8D25BB43BA366C1920043F110585101B1BCD4FDF10C1F4"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/REL-17.md",
+                          "sha256":  "A0BC9C3F4A67E07D36D386C698D3D1D3C15A82929A43C4B813C6CEE4EC86AFA7"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/RES-05.md",
+                          "sha256":  "BA79518D4BB472980FAF60DDA6195AA31ED38D1AD542A623FC78BD10AD1586A8"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/RESP-14.md",
+                          "sha256":  "0BEAF9F3E5D8BEFDDCA6D9283948167492AEABBE098302F1CA3FE5DA85F99F93"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/SEC-04.md",
+                          "sha256":  "698D26B9FCB5939D866E714A8629A3A5CDE73CAF648DF3C07AE9301F99860782"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/SPEC-12.md",
+                          "sha256":  "3985B4EA8FBAB63DB5DA81F4257F4D92FCE44D251125009228B02610FB44B357"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/SRE-10.md",
+                          "sha256":  "43BC335496C998DFDAC6C16B7B6B400334041EA25F3DD0A712EADA633EEEC00C"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/TI-13.md",
+                          "sha256":  "7FAD0A58889AA00EC6A862BFA421102477BDE75B2D7F530AE22201DC78E86E0B"
+                      },
+                      {
+                          "path":  "agents/prompts/roles/TRI-11.md",
+                          "sha256":  "FF1D933849E3FB816515F967A7385A07747C3741A0E7CC9597EC2835AAF14A74"
+                      },
+                      {
+                          "path":  "agents/skills/investigate-aitm-case/SKILL.md",
+                          "sha256":  "8E6D7C11F51FE859F58219134EF3D36C4D49A4D2DF0B5B30180462E8D59A3117"
+                      },
+                      {
+                          "path":  "agents/skills/plan-agent-authorized-response/SKILL.md",
+                          "sha256":  "2429D9AFC68A7CAF6726E94BD15709C4EEF8AFFC3512D26F2CEE5DD6EE04F4A9"
+                      },
+                      {
+                          "path":  "agents/skills/review-detection-coverage/SKILL.md",
+                          "sha256":  "542F9E8CE1BAFEAA6860322202D91E1F914F8ABD16D06488DBDA3161B79683C0"
+                      },
+                      {
+                          "path":  "agents/g0/assignment-registry.json",
+                          "sha256":  "CDE3101A07842CD99ADDD427B198C823798CD209865A4ECF3BE14EE12ECB95BC"
+                      },
+                      {
+                          "path":  "agents/g0/gate-state.json",
+                          "sha256":  "702FDE6228D00F4BEAD8BA7ADC3ADDFE2454E3FF5D565FB69A94AF5B891ED29A"
+                      },
+                      {
+                          "path":  "agents/g0/gate-policy.json",
+                          "sha256":  "4510F51D38A652001E790FFCBD6DE76ACD9E502B2C7DC78F67391EC43D5576A5"
+                      },
+                      {
+                          "path":  "agents/g0/prompt_preview.py",
+                          "sha256":  "1F01FC69B3088910C04550029CD5A1EA85AE4CAF01C81CE40CE9515BDA2FE6CA"
+                      },
+                      {
+                          "path":  "agents/g0/gate_report.py",
+                          "sha256":  "4E5DA41D99AD8E779E0437AF35A77340198E4B7225C11F5ED8CC4C40544723A3"
+                      },
+                      {
+                          "path":  "agents/g0/data-handling-defaults.json",
+                          "sha256":  "4EA886953C5A4F9B0577926668BD1C4A074C4ED619AA1C0D80EE6E22AE5F37BF"
+                      },
+                      {
+                          "path":  "agents/g0/data-handling-defaults.md",
+                          "sha256":  "F6334B9A444E1B3AF48DC31C757E6A02365FFE9E8A315116E0A461D672556F7E"
+                      },
+                      {
+                          "path":  "agents/g0/portable-deployment-profile.md",
+                          "sha256":  "754281322742DEE800E36F2F4B4B539CABB70994E21FE2E588CDAA732B1FF864"
+                      },
+                      {
+                          "path":  "agents/g0/product-charter.md",
+                          "sha256":  "731046D6AE1B9DF88F7C1DDC9734AED6DAD94E9915BDC2721AF638F067CE305C"
+                      },
+                      {
+                          "path":  "agents/g0/decisions.md",
+                          "sha256":  "057042F67453E91B225100979EFE476B13B48DD82879FE6DF2A582DC9FE6A47E"
+                      },
+                      {
+                          "path":  "agents/g0/environment-plan.md",
+                          "sha256":  "C0966A15E0FB8F3FEE2677A04370442F286C351EE2CDE64F653EA1D745F7CB23"
+                      }
+                  ]
+}

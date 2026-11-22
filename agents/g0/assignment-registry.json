@@ -1,0 +1,226 @@
+﻿{
+    "schema_version":  1,
+    "status":  "draft_only",
+    "source":  "canonical-json-registry",
+    "prompt_manifest":  "prompt-manifest.json",
+    "common_prompt":  "../prompts/common-contract.md",
+    "assignment_packet":  "../prompts/assignment-packet.md",
+    "roles":  [
+                  {
+                      "id":  "PM-01",
+                      "logical_identity":  "local-role/PM-01",
+                      "role":  "Product Manager",
+                      "role_prompt":  "../prompts/roles/PM-01.md",
+                      "proposed_scope":  "Read product, research, and backlog artifacts; create product/backlog drafts.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "PO-02",
+                      "logical_identity":  "local-role/PO-02",
+                      "role":  "Product Owner / Backlog Steward",
+                      "role_prompt":  "../prompts/roles/PO-02.md",
+                      "proposed_scope":  "Read/write backlog metadata and assignment packets; cannot activate stages.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "ARCH-03",
+                      "logical_identity":  "local-role/ARCH-03",
+                      "role":  "Solution Architect",
+                      "role_prompt":  "../prompts/roles/ARCH-03.md",
+                      "proposed_scope":  "Read/write architecture and interface design artifacts; no tenant data.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "SEC-04",
+                      "logical_identity":  "local-role/SEC-04",
+                      "role":  "Product Security Architect",
+                      "role_prompt":  "../prompts/roles/SEC-04.md",
+                      "proposed_scope":  "Read design and test artifacts; write threat models and findings; no production data.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "RES-05",
+                      "logical_identity":  "local-role/RES-05",
+                      "role":  "Threat Research Analyst",
+                      "role_prompt":  "../prompts/roles/RES-05.md",
+                      "proposed_scope":  "Read approved public/curated sources; write cited threat register; no target interaction.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "DATA-06",
+                      "logical_identity":  "local-role/DATA-06",
+                      "role":  "Data Governance \u0026 Privacy Analyst",
+                      "role_prompt":  "../prompts/roles/DATA-06.md",
+                      "proposed_scope":  "Read schemas/data-flow docs; write minimization and retention requirements; no raw telemetry.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "ENG-07",
+                      "logical_identity":  "local-role/ENG-07",
+                      "role":  "Engineering Lead",
+                      "role_prompt":  "../prompts/roles/ENG-07.md",
+                      "proposed_scope":  "Repository write access only in an assigned dev worktree after stage gates.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "DET-08",
+                      "logical_identity":  "local-role/DET-08",
+                      "role":  "Detection Engineering Analyst",
+                      "role_prompt":  "../prompts/roles/DET-08.md",
+                      "proposed_scope":  "Read rule metadata and synthetic events; draft versioned defensive detections.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "QA-09",
+                      "logical_identity":  "local-role/QA-09",
+                      "role":  "Quality Engineering Analyst",
+                      "role_prompt":  "../prompts/roles/QA-09.md",
+                      "proposed_scope":  "Run approved checks only in isolated synthetic test environment after readiness.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "SRE-10",
+                      "logical_identity":  "local-role/SRE-10",
+                      "role":  "Platform \u0026 Reliability Engineer",
+                      "role_prompt":  "../prompts/roles/SRE-10.md",
+                      "proposed_scope":  "Provision/observe isolated development and test infrastructure; no tenant write access.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "TRI-11",
+                      "logical_identity":  "local-role/TRI-11",
+                      "role":  "SOC Triage Coordinator",
+                      "role_prompt":  "../prompts/roles/TRI-11.md",
+                      "proposed_scope":  "Read one authorized redacted case; coordinate read-only specialist assignments.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "SPEC-12",
+                      "logical_identity":  "local-role/SPEC-12",
+                      "role":  "Investigation Specialist (scoped instances)",
+                      "role_prompt":  "../prompts/roles/SPEC-12.md",
+                      "proposed_scope":  "Read only assigned redacted evidence slice in one investigation domain.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "TI-13",
+                      "logical_identity":  "local-role/TI-13",
+                      "role":  "Threat Intelligence Analyst",
+                      "role_prompt":  "../prompts/roles/TI-13.md",
+                      "proposed_scope":  "Read supplied indicators and allowlisted intelligence sources only.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "RESP-14",
+                      "logical_identity":  "local-role/RESP-14",
+                      "role":  "Response Planner",
+                      "role_prompt":  "../prompts/roles/RESP-14.md",
+                      "proposed_scope":  "Read cited case evidence and approved playbooks; draft options only.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "EXEC-15",
+                      "logical_identity":  "local-role/EXEC-15",
+                      "role":  "Response Execution Agent",
+                      "role_prompt":  "../prompts/roles/EXEC-15.md",
+                      "proposed_scope":  "One exact action through policy gateway after authorization; no direct provider credentials.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "AUD-16",
+                      "logical_identity":  "local-role/AUD-16",
+                      "role":  "Independent Assurance Agent",
+                      "role_prompt":  "../prompts/roles/AUD-16.md",
+                      "proposed_scope":  "Read-only access to current-gate evidence; independent of artifact authors.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "REL-17",
+                      "logical_identity":  "local-role/REL-17",
+                      "role":  "Release Manager",
+                      "role_prompt":  "../prompts/roles/REL-17.md",
+                      "proposed_scope":  "Read release metadata; stage rollout only through release gateway after all gates.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  },
+                  {
+                      "id":  "AUT-18",
+                      "logical_identity":  "local-role/AUT-18",
+                      "role":  "Autonomous Authorization Analyst",
+                      "role_prompt":  "../prompts/roles/AUT-18.md",
+                      "proposed_scope":  "Read exact proposed action, cited evidence, and signed policy; cannot execute or alter policy.",
+                      "tools":  [
+
+                                ],
+                      "runtime_identity":  "not_provisioned",
+                      "assignment_status":  "logical_only"
+                  }
+              ]
+}
